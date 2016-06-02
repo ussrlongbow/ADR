@@ -30,7 +30,6 @@ if (_time > 0) then {
 while {_vehicle_repairing} do {
 	scopeName "main";
 	car_repaired = true;
-hint "4";
 	player playAction "MedicStartRightSide";
 	while {(_time > 0)} do {
 		sleep 1;
