@@ -11,8 +11,13 @@ if (_iampilot) then {
 
 	//===== FIELD REPAIR
 	vehicle_repaired = false;
-	player addAction ["<t color='#FF9800'><img image='\a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_debug_ca.paa' size='1.0'/> Полевой ремонт</t>", QS_fnc_actionPilotRepair, [1], 100, false, false, '', '[] call QS_fnc_conditionPilotRepair'];
+	player addAction ["<t color='#FF9800'><img image='\a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_debug_ca.paa' size='1.0'/> Полевой ремонт</t>", QS_fnc_actionPilotRepair, [1], 100, false, false, '', '[] call QS_fnc_conditionRepair'];
 };
+
+//====================== Repair wheels vehicle
+
+car_repaired = false;
+player addAction ["<t color='#FF9800'><img image='\a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_debug_ca.paa' size='1.0'/> Полевой ремонт колес</t>", QS_fnc_actionCarRepair, [1], 100, false, false, '', '[] call QS_fnc_conditionRepair'];
 
 //====================== Clear vehicle inventory
 inventory_cleared = false;

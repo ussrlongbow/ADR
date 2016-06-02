@@ -7,6 +7,7 @@ class QS
 		class actionClearInventory {};
 		class actionMagRepack {};
 		class actionPilotRepair {};
+		class actionCarRepair {};
 		class addAction {};
 		class addActionBlock {};
 		class addActionDefuse {};
@@ -22,7 +23,7 @@ class QS
 		class AOenemy {};
 		class AOminefield {};
 		class conditionClearInventory {};
-		class conditionPilotRepair {};
+		class conditionRepair {};
 		class conditionUH80TurretActionLock {};
 		class conditionUH80TurretActionUnlock {};
 		class deleteOldSMUnits {};
